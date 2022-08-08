@@ -7,8 +7,8 @@
     "build": "nx build",
     "test": "nx test",
     "postinstall": "ngcc --properties es2020 browser module main",
-    "affected:apps": "nx affected:apps --base=master~1 --head=master",
-    "affected:test": "nx affected --target=test --base=master~1 --head=master"
+    "affected:apps": "nx affected:apps --base=origin/master~1 --head=origin/master",
+    "affected:test": "nx affected --target=test --base=origin/master~1 --head=origin/master"
   },
   "private": true,
   "dependencies": {
