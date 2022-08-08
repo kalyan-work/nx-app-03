@@ -20,7 +20,7 @@ jobs:
       - run: npm install
       - name: Run Affected Apps
         shell: bash
-        run: npm run affected:apps
+        run: npm run affectedPR:apps && npm run affectedPR:libs
       - name: Run Affected Tests
         shell: bash
-        run: npm run affected:test
+        run: npm run affectedPR:test
