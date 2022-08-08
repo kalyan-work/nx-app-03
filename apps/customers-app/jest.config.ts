@@ -1,5 +1,11 @@
 /* eslint-disable */
 export default {
+  collectCoverage: true,
+  collectCoverageFrom: [
+    "**/*.{ts,tsx}",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ],
   displayName: 'customers-app',
   preset: '../../jest.preset.js',
   transform: {
