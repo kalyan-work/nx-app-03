@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-app-03/common-utils": ["libs/common-utils/src/index.ts"],
+      "@nx-app-03/react-components-2": ["libs/react-components-2/src/index.ts"],
+      "react-lib-components": ["libs/react-lib-components/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

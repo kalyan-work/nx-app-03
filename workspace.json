@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "accounts-app": "apps/accounts-app",
+    "accounts-app-e2e": "apps/accounts-app-e2e",
+    "common-utils": "libs/common-utils",
+    "customers-app": "apps/customers-app",
+    "customers-app-e2e": "apps/customers-app-e2e",
+    "mock-server": "apps/mock-server",
+    "react-components-2": "libs/react-components-2",
+    "react-lib-components": "libs/react-lib-components",
+    "react-lib-components-e2e": "apps/react-lib-components-e2e"
+  }
+}
