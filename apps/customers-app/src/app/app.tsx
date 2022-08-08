@@ -48,7 +48,7 @@ export function App() {
           path="/page-2"
           element={
             <div>
-              <Link to="/">Click here to go back to root page.</Link>
+              <Link to="/">Click here to go back to root page. Test Update</Link>
             </div>
           }
         />
