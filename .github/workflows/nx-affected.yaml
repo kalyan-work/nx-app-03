@@ -18,6 +18,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: git fetch origin master
       - run: npm install
+      - name: Run Affected Apps
+        shell: bash
+        run: npm run affected:apps
       - name: Run Affected Tests
         shell: bash
-        run: npm run affected:test -- --base=remotes/origin/master
+        run: npm run affected:test
