@@ -8,7 +8,7 @@ import { getFoo } from "../../../../libs/common-utils/src/";
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-     This is a starter component and can be deleted....
+     This is a starter component and can be deleted....... Test Changes!
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
      Delete this file and get started with your project!
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
