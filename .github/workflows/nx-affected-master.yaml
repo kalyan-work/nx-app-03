@@ -1,4 +1,4 @@
-name: Nx Affected CI
+name: Nx Affected CI - Master
 on:
   push:
     branches: [master]

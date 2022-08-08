@@ -1,4 +1,4 @@
-name: Nx Affected CI
+name: Nx Affected CI - Pull Request
 on:
   pull_request:
     branches: [master]
