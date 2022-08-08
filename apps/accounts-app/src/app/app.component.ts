@@ -7,5 +7,5 @@ import { getFoo } from "../../../../libs/common-utils/src/";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = `accounts-app001 ${getFoo()}`;
+  title = `accounts-app ${getFoo()}`;
 }
