@@ -4,13 +4,14 @@ import NxWelcome from './nx-welcome';
 import { getFoo } from '../../../../libs/common-utils/src/';
 
 import { Route, Routes, Link } from 'react-router-dom';
-import { Title } from "@nx-app-03/ui-react";
+import { Title, Button } from "@nx-app-03/ui-react";
+
 export function App() {
   return (
     <>
       <div>{getFoo()}</div>
       <NxWelcome title="customers-app" />
-      <Title title="Hello" />
+      <Button variant="contained" name="Click Here" />
       <div />
 
       {/* START: routes */}
