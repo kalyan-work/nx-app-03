@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/react-components/src",
+  "sourceRoot": "libs/ui-react/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -11,17 +11,17 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "libs/react-components/**/*.{ts,tsx,js,jsx}"
+          "libs/ui-react/**/*.{ts,tsx,js,jsx}"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/libs/react-components"
+        "coverage/libs/ui-react"
       ],
       "options": {
-        "jestConfig": "libs/react-components/jest.config.ts",
+        "jestConfig": "libs/ui-react/jest.config.js",
         "passWithNoTests": true
       }
     }

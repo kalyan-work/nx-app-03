@@ -8,6 +8,6 @@
     "customers-app": "apps/customers-app",
     "customers-app-e2e": "apps/customers-app-e2e",
     "mock-server": "apps/mock-server",
-    "react-components": "libs/react-components"
+    "ui-react": "libs/ui-react"
   }
 }

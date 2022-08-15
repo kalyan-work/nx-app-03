@@ -21,8 +21,8 @@
       "@nx-app-03/common-utils": [
         "libs/common-utils/src/index.ts"
       ],
-      "@nx-app-03/react-components": [
-        "libs/react-components/src/index.ts"
+      "@nx-app-03/ui-react": [
+        "libs/ui-react/src/index.js"
       ]
     }
   },
