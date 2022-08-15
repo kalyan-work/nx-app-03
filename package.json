@@ -52,7 +52,7 @@
     "@babel/core": "7.12.13",
     "@babel/preset-typescript": "7.12.13",
     "@genesisx/k8-docker-config": "^0.2.1",
-    "@genesisx/react-interapp-routing": "^2.6.0",
+    "@genesisx/react-interapp-routing": "^2.6.1",
     "@nrwl/angular": "^14.5.4",
     "@nrwl/cli": "14.5.4",
     "@nrwl/cypress": "14.5.4",

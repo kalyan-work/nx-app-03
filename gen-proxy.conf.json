@@ -1,0 +1,16 @@
+{
+    "apps": [
+        "customers-app",
+        "accounts-app"
+    ],
+    "mainapps": {
+        "/customers": {
+            "target": "http://localhost:4001",
+            "secure": false
+        },
+        "/accounts": {
+            "target": "http://localhost:4002",
+            "secure": false
+        }
+    }
+}
