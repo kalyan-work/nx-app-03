@@ -1,0 +1,27 @@
+name: Nx Affected Apps
+on:
+  workflow_dispatch:
+    inputs:
+      base-branch:
+        description: 'Base Branch'
+        required: true
+        default: 'master'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: git fetch origin ${{ inputs.base-branch }}
+      - run: npm install
+      - name: Run Affected Apps
+        shell: bash
+        run: nx affected:apps --base=origin/${{ inputs.base-branch }}~1 --head=HEAD 
