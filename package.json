@@ -13,7 +13,7 @@
     "affected:apps": "nx affected:apps --base=origin/master~1 --head=origin/master",
     "affected:libs": "nx affected:libs --base=origin/master~1 --head=origin/master",
     "affected:test": "nx affected --target=test --base=origin/master~1 --head=origin/master",
-    "run-all:test": "nx run-many --target=test --projects=customers-app,accounts-app,mock-server,common-utils,react-components-2,react-lib-components"
+    "run-all:test": "nx run-many --target=test --projects=customers-app,accounts-app,mock-server,common-utils"
   },
   "private": true,
   "dependencies": {

@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
@@ -19,7 +21,9 @@
           "apps/customers-app/src/favicon.ico",
           "apps/customers-app/src/assets"
         ],
-        "styles": ["apps/customers-app/src/styles.css"],
+        "styles": [
+          "apps/customers-app/src/styles.css"
+        ],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
@@ -65,14 +69,20 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/customers-app/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "apps/customers-app/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/customers-app"],
+      "outputs": [
+        "coverage/apps/customers-app"
+      ],
       "options": {
         "jestConfig": "apps/customers-app/jest.config.ts",
         "passWithNoTests": true
@@ -95,7 +105,9 @@
     },
     "build-storybook": {
       "executor": "@nrwl/storybook:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "uiFramework": "@storybook/react",
         "outputPath": "dist/storybook/customers-app",

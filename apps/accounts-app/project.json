@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/accounts-app",
         "index": "apps/accounts-app/src/index.html",
@@ -16,7 +18,9 @@
           "apps/accounts-app/src/favicon.ico",
           "apps/accounts-app/src/assets"
         ],
-        "styles": ["apps/accounts-app/src/styles.css"],
+        "styles": [
+          "apps/accounts-app/src/styles.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -81,7 +85,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/accounts-app"],
+      "outputs": [
+        "coverage/apps/accounts-app"
+      ],
       "options": {
         "jestConfig": "apps/accounts-app/jest.config.ts",
         "passWithNoTests": true

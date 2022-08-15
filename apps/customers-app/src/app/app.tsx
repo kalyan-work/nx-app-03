@@ -5,8 +5,6 @@ import { getFoo } from '../../../../libs/common-utils/src/';
 
 import { Route, Routes, Link } from 'react-router-dom';
 
-import { ReactLibComponents } from '../../../../libs/react-lib-components/src';
-
 export function App() {
   return (
     <>
@@ -26,9 +24,6 @@ export function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/react-lib-components">ReactLibComponents</Link>
-          </li>
-          <li>
             <Link to="/page-2">Page 2</Link>
           </li>
         </ul>
@@ -43,7 +38,6 @@ export function App() {
             </div>
           }
         />
-        <Route path="/react-lib-components" element={<ReactLibComponents />} />
         <Route
           path="/page-2"
           element={
