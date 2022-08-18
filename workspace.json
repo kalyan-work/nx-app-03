@@ -8,6 +8,8 @@
     "customers-app": "apps/customers-app",
     "customers-app-e2e": "apps/customers-app-e2e",
     "mock-server": "apps/mock-server",
+    "parent-app": "apps/parent-app",
+    "parent-app-e2e": "apps/parent-app-e2e",
     "ui-react": "libs/ui-react"
   }
 }

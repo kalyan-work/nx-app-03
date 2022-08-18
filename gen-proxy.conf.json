@@ -5,11 +5,15 @@
     ],
     "mainapps": {
         "/customers": {
-            "target": "http://localhost:4001",
+            "target": "http://localhost:4201",
             "secure": false
         },
         "/accounts": {
-            "target": "http://localhost:4002",
+            "target": "http://localhost:4200",
+            "secure": false
+        },
+        "/parent": {
+            "target": "http://localhost:4202",
             "secure": false
         }
     }

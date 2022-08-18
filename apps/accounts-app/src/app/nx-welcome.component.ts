@@ -457,7 +457,7 @@ import { getFoo } from "../../../../libs/common-utils/src/";
               </svg>
               <span>You&apos;re up and running</span>
             </h2>
-            <a href="#commands"> What&apos;s next? </a>
+            <a id="commands-href" href="#commands"> What&apos;s next? </a>
           </div>
           <div class="logo-container">
             <svg

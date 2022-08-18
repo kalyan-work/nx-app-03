@@ -11,6 +11,10 @@ app.get('/api', (req, res) => {
   res.send({ message: 'Welcome to mock-server!' });
 });
 
+app.get('/api_new', (req, res) => {
+  res.send({ message: 'Welcome to mock-server!' });
+});
+
 const port = process.env.port || 3333;
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);
