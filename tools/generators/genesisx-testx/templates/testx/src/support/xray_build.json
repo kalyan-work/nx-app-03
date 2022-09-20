@@ -1,0 +1,21 @@
+{
+	"fields": {
+		"project": {
+			"key": "VCT"
+		},
+		"summary": "Journeys Build BDD Jenkins Execution | BLD",
+		"issuetype": {
+			"id": "111"
+		},
+		"fixVersions": [
+			{
+				"name": "2021"
+			}
+		]
+	},
+	"xrayFields": {
+		"environments": [
+			"BLD"
+		]
+	}
+}

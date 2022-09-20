@@ -1,0 +1,20 @@
+
+// Jenkins groovi code to run Xray test cases from pipeline.
+//
+
+// stage('X-Ray Test Update') {
+//   container('node')  {
+//     for (journeyName in changedJourneys ) {
+//       env.JOURNEY_NAME = "${journeyName}"
+//       sh '''
+//           echo " print in sh ${JOURNEY_NAME}"
+//           apk add --no-cache curl
+//           cd $(pwd)/journeys/$JOURNEY_NAME/tests/reports
+//           for FILE in *;
+//           do
+//           curl -H "Content-Type: multipart/form-data" -X POST -F info=@../../../test-common/xray_build.json -F results=@$FILE -H "Authorization: Bearer $(curl -H "Content-Type: application/json" -X POST --data @../../../test-common/xray_client_cred.json  https://xray.cloud.xpand-it.com/api/v1/authenticate | tr -d '"')" https://xray.cloud.xpand-it.com/api/v1/import/execution/cucumber/multipart
+//           done
+//           '''
+//     }
+//   }
+// }

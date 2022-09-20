@@ -1,0 +1,37 @@
+{
+  "extends": "lighthouse:default",
+  "settings": {
+    "budgets": [
+      {
+        "resourceSizes": [
+          {
+            "resourceType": "script",
+            "budget": 500
+          },
+          {
+            "resourceType": "image",
+            "budget": 10
+          },
+          {
+            "resourceType": "third-party",
+            "budget": 100
+          },
+          {
+            "resourceType": "total",
+            "budget": 2000
+          }
+        ],
+        "resourceCounts": [
+          {
+            "resourceType": "third-party",
+            "budget": 10
+          },
+          {
+            "resourceType": "total",
+            "budget": 50
+          }
+        ]
+      }
+    ]
+  }
+}

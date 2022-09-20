@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "genesisx-testx",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "Select the Project App Name to update its folders with TestX templates",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "targetUrl": {
+      "type": "string",
+      "description": "Url of the app instance that has to be tested",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    }
+  },
+  "required": ["project", "targetUrl"]
+}

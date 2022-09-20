@@ -1,0 +1,8 @@
+{
+  "url": "https://reqres.in/api/users",
+  "header": "",
+  "data": {
+    "name": "morpheus",
+    "job": "leader"
+  }
+}
